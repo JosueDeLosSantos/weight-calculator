@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: NotoSans-SemiBold;
+    src: url('./assets/Noto_Sans/NotoSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Acme;
+    src: url('./assets/Acme/Acme-Regular.ttf');
+}
+
+@font-face {
+    font-family: NotoSans-Italic;
+    src: url('./assets/Noto_Sans/NotoSans-Italic.ttf');
+}
+
+body {
+    background-color: rgb(223 231 231 / 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
