@@ -24,10 +24,11 @@ input {
 }
 
 .screen {
-    background-color: rgb(195, 220, 228);
+    background-color: rgb(226 245 229);
     padding: 1rem;
     border: 1px solid rgb(71, 70, 70);
     border-radius: 5px;
+
 }
 
 .weight {
