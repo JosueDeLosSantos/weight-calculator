@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import "./App.css"
 import gitHubIcon from "./assets/icons8-github.svg"
 
@@ -7,20 +7,11 @@ function App() {
 	const [height, setHeight] = useState("") // inches
 	const [grammage, setGrammage] = useState("350")
 	const [pages, setPages] = useState("")
-	const [weight, setWeight] = useState("")
 
-	useEffect(() => {
-		if (width && height && grammage && pages) {
-			// 1 in^2 = 0.00064516 m^2
-			//convert from in^2 to m^2
-			const area = parseFloat(width * height * 0.00064516)
-			//weight of the printing material in grams
-			const w = parseFloat(area * grammage * pages)
-			//to convert from g to lb, we need to divide by 453.59237
-			//since 1 lb = 453.59237g
-			setWeight(parseInt(w / 453.59237) + " Lib")
-		}
-	})
+	const weight =
+		parseInt(
+			parseFloat(parseFloat(width * height * 0.00064516) * grammage * pages) / 453.59237
+		) + " Lib"
 
 	function handleInputs(e) {
 		if (e.target.name === "width") {
@@ -41,9 +32,7 @@ function App() {
 	return (
 		<form className="Calculator">
 			<div className="screen">
-				<div onChange={handleInputs} className="weight">
-					{weight}
-				</div>
+				<div className="weight">{weight}</div>
 			</div>
 			<div className="width">
 				<label htmlFor="width">Anchura</label>
