@@ -1,8 +1,5 @@
-# React + Vite
+#Calculadora de peso de material de impresión
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto surge por la necesidad de tener una calculadora que reciba las longitudes de las dimensiones del papel en pulgadas y que proyecte los resultados del peso del material de impresión en libras.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La mayoría de las calculadoras que aparecen en los sitios web solo permiten operar con longitudes expresadas en milímetros, lo cual puede provocar que la persona interesada en operar con longitudes expresadas en pulgadas y peso expresado en libras tenga que realizar conversiones tediosas con una calculadora común.
