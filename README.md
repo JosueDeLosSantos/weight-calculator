@@ -1,4 +1,4 @@
-#Calculadora de peso de material de impresión
+# Calculadora de peso de material de impresión
 
 Este proyecto surge por la necesidad de tener una calculadora que reciba las longitudes de las dimensiones del papel en pulgadas y que proyecte los resultados del peso del material de impresión en libras.
 
